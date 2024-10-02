@@ -1,0 +1,59 @@
+[
+    {
+        "text": "나하고 선수들 하고 내일 저녁 일곱 시 회의 잡는 거 기억해 줘",
+        "intent": "캘린더_설정",
+        "slot_out": "O B_사람 O B_날짜 B_시간대 B_시간 I_시간 B_이벤트_이름 O O O O",
+        "slot_mapping": [
+            {
+                "text": "나하고",
+                "entity": "O"
+            },
+            {
+                "text": "선수들",
+                "entity": "B_사람"
+            },
+            {
+                "text": "하고",
+                "entity": "O"
+            },
+            {
+                "text": "내일",
+                "entity": "B_날짜"
+            },
+            {
+                "text": "저녁",
+                "entity": "B_시간대"
+            },
+            {
+                "text": "일곱",
+                "entity": "B_시간"
+            },
+            {
+                "text": "시",
+                "entity": "I_시간"
+            },
+            {
+                "text": "회의",
+                "entity": "B_이벤트_이름"
+            },
+            {
+                "text": "잡는",
+                "entity": "O"
+            },
+            {
+                "text": "거",
+                "entity": "O"
+            },
+            {
+                "text": "기억해",
+                "entity": "O"
+            },
+            {
+                "text": "줘",
+                "entity": "O"
+            }
+        ],
+        "index": 585
+    }
+    
+]
