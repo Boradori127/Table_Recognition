@@ -59,11 +59,9 @@ Hugging Face에서 가중치 파일을 다운로드:
 
 ```bash
 $ wget -P weights/ https://huggingface.co/poloclub/UniTable/resolve/main/unitable_large_bbox.pt
-```
-```bash
+
 $ wget -P weights/ https://huggingface.co/poloclub/UniTable/resolve/main/unitable_large_content.pt
-```
-```bash
+
 $ wget -P weights/ https://huggingface.co/poloclub/UniTable/resolve/main/unitable_large_structure.pt
 ```
 
@@ -99,7 +97,7 @@ $ CUDA_VISIBLE_DEVICES=0 python3 main.py --image_path {image_path} --gpu --korea
 
 데모 실행:
 
-notebook.ipynb 파일을 통해 빠른 테스트 가능
+[notebook.ipynb](https://github.com/Boradori127/Table_Recognition/blob/master/notebook.ipynb) 파일을 통해 빠른 테스트 가능
 
 
 <br/>
