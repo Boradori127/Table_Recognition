@@ -73,7 +73,7 @@ $ wget -P weights/ https://huggingface.co/poloclub/UniTable/resolve/main/unitabl
 
 `./examples` 폴더에서 다음 테스트 데이터(예시) 를 확인할 수 있습니다:
 
-- 영어 테이블: 표준 테이블 벤치마크에서 추출
+- 영어 테이블: [PubTabNet](https://github.com/ibm-aur-nlp/PubTabNet)(표준 테이블 벤치마크)에서 추출
 - 한국어 테이블: [HCLT 2023 한국어 정보처리 학회 논문집](http://www.hclt.kr/symp/?lnb=conference)기반 자체 제작
    *  한국어 테이블 5개(단순/복잡 구조), 한국어+영어 테이블 6개(단순/복잡 구조) 
 
