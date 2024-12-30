@@ -1,6 +1,22 @@
-python >= 3.6
 torch == 2.2.0
 torchvision == 0.17.0
+torchaudio
 torchtext == 0.17.0
 easyocr == 1.7.2
 paddleocr == 2.9.1
+jsonlines
+beautifulsoup4
+matplotlib
+hydra-core
+hydra_colorlog
+apted
+Distance
+lxml==4.9.3
+torchmetrics
+wandb
+einops
+ptflops
+tokenizers
+pycocotools
+torchmetrics
+faster-coco-eval
