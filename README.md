@@ -6,6 +6,8 @@ UniTable은 `표의 구조(Table Structure)`, `테두리 좌표(Bounding Box)`, 
 
 한국어 테이블 데이터셋의 부재의 한계에도 불구하고 영어 기반 SOTA모델의 한국어 확장 가능성을 탐구하고, 다국어 표 인식의 기반을 마련했다는 점에서 의의가 있습니다.
 
+[notebook.ipynb](https://github.com/Boradori127/Table_Recognition/blob/master/notebook.ipynb) 파일을 실행하면 데모 확인이 가능합니다.
+
 <br/>
 
 ## Model Architecture (모델 구조)
@@ -53,10 +55,17 @@ UniTable은 `표의 구조(Table Structure)`, `테두리 좌표(Bounding Box)`, 
 ## Install & Usage (설치 및 사용방법)
 ### 모델 가중치 다운로드
 
-Hugging Face에서 다음 가중치 파일들을 `./weights` 폴더로 다운로드:
-- unitable_large_bbox.pt
-- unitable_large_content.pt
-- unitable_large_structure.pt
+Hugging Face에서 가중치 파일을 다운로드:
+
+```bash
+$ wget -P weights/ https://huggingface.co/poloclub/UniTable/resolve/main/unitable_large_bbox.pt
+```
+```bash
+$ wget -P weights/ https://huggingface.co/poloclub/UniTable/resolve/main/unitable_large_content.pt
+```
+```bash
+$ wget -P weights/ https://huggingface.co/poloclub/UniTable/resolve/main/unitable_large_structure.pt
+```
 
 다운로드 링크: [UniTable Model Weights](https://huggingface.co/poloclub/UniTable/tree/main)
 
@@ -79,10 +88,10 @@ $ CUDA_VISIBLE_DEVICES=0 python3 main.py --image_path {image_path} --gpu
 ```
 
 한국어 포함 테이블:
-- ocr 번호 지정 
+- `ocr` 인자 지정 필수
   - 1 : EasyOCR / 2 : PaddleOCR / 3 : NaverClovaOCR
   - NaverClova OCR 사용할 경우 (계정 당 100회 무료) 
-    - API 발급 후 `api_url`, `secret_key` 인자 지정 필요
+    - API 발급 후 `api_url`, `secret_key` 인자 지정 필수
 ```bash
 $ CUDA_VISIBLE_DEVICES=0 python3 main.py --image_path {image_path} --gpu --korean --ocr {ocr_number} 
 ```
