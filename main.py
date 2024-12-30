@@ -4,7 +4,7 @@ from pipeline import unitable
 def main():
     args = argparse.ArgumentParser()
     args.add_argument("--gpu", action='store_true')
-    args.add_argument("--image_path", default='./examples/Korean_Table', required=False, help="path to input image directory")
+    args.add_argument("--image_path", default='./examples/English_Table/PMC514528_004_00.png', required=False, help="path to input image directory")
     args.add_argument("--korean", action='store_true', help="Use this argument when processing Korean tables.")
     args.add_argument("--ocr", default=1, choices=[1, 2, 3], required=False, type=int, help="For Korean tables : Use OCR 1 for EasyOCR (default), 2 for PaddleOCR, or 3 for NaverClovaOCR.")
     args.add_argument("--api_url", required=False, help="Must be specified when using NaverClovaOCR.")
